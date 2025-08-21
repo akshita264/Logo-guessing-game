@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, RotateCcw, Trophy, Clock, Target } from 'lucide-react';
-// Import all logos from the src/logos directory
 import javascriptLogo from '../logos/javascript.png';
 import pythonLogo from '../logos/python.png';
 import javaLogo from '../logos/java.png';
