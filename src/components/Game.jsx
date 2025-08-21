@@ -284,7 +284,7 @@ const TechLogoGame = () => {
                 <span className="font-semibold">Score: {score}/{questionsAnswered}</span>
               </div>
               <div className="flex items-center gap-1 sm:gap-2 text-white animate-fade-in text-sm" style={{ animationDelay: '0.2s' }}>
-                <span>Question {questionsAnswered + 1}/10</span>
+                <span>Question {questionsAnswered}/10</span>
               </div>
               <div className={`flex items-center gap-1 sm:gap-2 font-bold text-lg transition-all duration-300 ${
                 timeLeft <= 3 ? 'text-red-400 animate-pulse-fast scale-110' : 
