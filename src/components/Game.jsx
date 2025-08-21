@@ -148,7 +148,7 @@ const TechLogoGame = () => {
     setCurrentLogo(logo);
     setUserGuess('');
     setFeedback('');
-    setTimeLeft(10);
+    setTimeLeft(20);
     setGameActive(true);
   };
 
@@ -235,7 +235,7 @@ const TechLogoGame = () => {
         {logo.image ? (
           <img 
             src={logo.image} 
-            alt={logo.name} 
+            alt=""
             className="max-w-[80%] max-h-[80%] object-contain drop-shadow-lg"
           />
         ) : (
@@ -263,7 +263,7 @@ const TechLogoGame = () => {
             ) : (
               <p className="text-white/80 mb-6 text-sm sm:text-lg animate-fade-in">
                 Test your knowledge of programming languages, frameworks, tools, and platforms. 
-                You have 10 seconds per logo - type your answer in the text box!
+                You have 20 seconds per logo - type your answer in the text box!
               </p>
             )}
             <button
@@ -334,16 +334,6 @@ const TechLogoGame = () => {
                                  shadow-lg hover:shadow-2xl animate-bounce-subtle"
                     >
                       Submit
-                    </button>
-                    <button
-                      onClick={() => handleSubmit()}
-                      disabled={!userGuess.trim()}
-                      className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 
-                                 disabled:opacity-50 disabled:cursor-not-allowed text-white px-4 sm:px-6 py-2 sm:py-3 rounded-2xl 
-                                 font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-1
-                                 shadow-lg hover:shadow-2xl animate-pulse-subtle"
-                    >
-                      ⏎
                     </button>
                   </div>
                 </div>
